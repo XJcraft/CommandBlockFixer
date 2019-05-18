@@ -1,5 +1,6 @@
 name: CommandFixer
 main: org.xjcraft.command.Fixer
 version: ${project.version}
+api-version: 1.13
 author: reezhu
 softdepend: []

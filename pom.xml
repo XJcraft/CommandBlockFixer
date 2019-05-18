@@ -68,24 +68,31 @@
     </repositories>
     <dependencies>
         <!--Spigot API-->
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>LATEST</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.spigotmc</groupId>-->
+        <!--<artifactId>spigot-api</artifactId>-->
+        <!--<version>LATEST</version>-->
+        <!--<scope>provided</scope>-->
+        <!--</dependency>-->
         <!--Bukkit API-->
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>LATEST</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>org.bukkit</groupId>-->
+        <!--<artifactId>bukkit</artifactId>-->
+        <!--<version>LATEST</version>-->
+        <!--<scope>provided</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.18</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mojang</groupId>
+            <artifactId>spigot</artifactId>
+            <version>LATEST</version>
+            <scope>system</scope>
+            <systemPath>E:/Game/Minecraft/Servers/spigot-sync/spigot.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
