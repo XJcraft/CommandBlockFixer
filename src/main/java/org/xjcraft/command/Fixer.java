@@ -1,17 +1,18 @@
 package org.xjcraft.command;
 
-import net.minecraft.server.v1_14_R1.BlockPosition;
-import net.minecraft.server.v1_14_R1.TileEntity;
-import net.minecraft.server.v1_14_R1.TileEntityCommand;
-import net.minecraft.server.v1_14_R1.WorldServer;
+
+import net.minecraft.server.v1_14_R1.v1_14_R1.BlockPosition;
+import net.minecraft.server.v1_14_R1.v1_14_R1.TileEntity;
+import net.minecraft.server.v1_14_R1.v1_14_R1.TileEntityCommand;
+import net.minecraft.server.v1_14_R1.v1_14_R1.WorldServer;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.CommandBlock;
 import org.bukkit.command.BlockCommandSender;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_14_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_14_R1.block.CraftCommandBlock;
+import org.bukkit.craftbukkit.v1_14_R1.v1_14_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_14_R1.v1_14_R1.block.CraftCommandBlock;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockRedstoneEvent;
