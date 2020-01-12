@@ -92,7 +92,7 @@
             <artifactId>spigot</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>E:/Game/Minecraft/Servers/spigot-sync/spigot.jar</systemPath>
+            <systemPath>M:/Minecraft/Servers/spigot-sync/spigot.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
