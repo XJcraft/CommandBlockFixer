@@ -1,18 +1,12 @@
 package org.xjcraft.command;
 
 
-import net.minecraft.server.v1_15_R1.BlockPosition;
-import net.minecraft.server.v1_15_R1.TileEntity;
-import net.minecraft.server.v1_15_R1.TileEntityCommand;
-import net.minecraft.server.v1_15_R1.WorldServer;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.CommandBlock;
 import org.bukkit.command.BlockCommandSender;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_15_R1.block.CraftCommandBlock;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockRedstoneEvent;
@@ -74,15 +68,20 @@ public class Fixer extends JavaPlugin implements Listener {
         if (event.getOldCurrent() >= event.getNewCurrent()) return;
         Block clickedBlock = event.getBlock();
         if (clickedBlock.getType().data == org.bukkit.block.data.type.CommandBlock.class) {
-            CraftCommandBlock block = (CraftCommandBlock) clickedBlock.getState();
+//            CraftCommandBlock block = (CraftCommandBlock) clickedBlock.getState();
+//            String s = modifyCommand(block);
+//            block.setCommand(s);
+//            CraftWorld world = (CraftWorld) clickedBlock.getWorld();
+//            WorldServer handle = world.getHandle();
+//            TileEntity tileEntity = handle.getTileEntity(new BlockPosition(block.getX(), block.getY(), block.getZ()));
+//            ((TileEntityCommand) tileEntity).getCommandBlock().setCommand(s);
+
+            CommandBlock block = (CommandBlock) clickedBlock.getState();
             String s = modifyCommand(block);
             block.setCommand(s);
-            CraftWorld world = (CraftWorld) clickedBlock.getWorld();
-            WorldServer handle = world.getHandle();
-            TileEntity tileEntity = handle.getTileEntity(new BlockPosition(block.getX(), block.getY(), block.getZ()));
-            ((TileEntityCommand) tileEntity).getCommandBlock().setCommand(s);
 
         }
+
     }
 
 }
